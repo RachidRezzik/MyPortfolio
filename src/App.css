@@ -1,38 +1,549 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* **************NAVBAR***************** */
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  padding: 0px 2.5%;
+  z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.logo_div{
+  order: 2;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo_div img{
+  width: 100px;
+  height: 32.5px;
+  margin-top: 2.5px;
+  margin-right: -2.5px;
+}
+
+.menu_div{
+  position: fixed;
+  top: 65px;
+  left: -100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: black;
+  width: 100vw;
+  height: calc(100vh - 65px);
+  padding: 20px 10px;
+  opacity: 0;
+  transition: left .5s ease, opacity .5s ease;
+  z-index: 10;
+}
+
+.menu_div.active{
+  left: 0px;
+  opacity: 1;
+}
+
+.menu_div a{
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 30px 10px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.menu_div a:hover{
+  color: rgb(2, 160, 2);
+}
+
+.hamburger_div{
+  width: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger_div img{
+  order: 1;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.contact_div{
+  order: 3;
+  width: 110px;
+  text-align: right;
+}
+
+.contact_div button{
+  outline: none;
+  border: 2px solid rgb(2, 160, 2);
+  background: black;
+  color:rgb(2, 160, 2);
+  padding: 2.5px;
+  border-radius: 5px;
+  font-size: 12.5px;
+  text-align: right;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact_div button:hover{
+  background: rgb(2, 160, 2);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact_info{
+  position: fixed;
+  top: 65px;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - 65px);
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .5s ease;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  padding: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact_info.active{
+  right: 0px;
+  opacity: 1;
+}
+
+.contact_info h2{
+  color: white;
+  max-width: 450px;
+}
+
+.contact_info h4{
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.contact_info a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background: rgb(2, 160, 2);
+}
+
+@media screen and (min-width: 800px){
+  /* .contact_div{
+    background: red;
+    width: 150px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .contact_div button{
+    font-size: 14px;
+    width: 170px;
+  } */
+  .menu_div{
+    position: static;
+    order: 2;
+    padding: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    height: 100%;
+    transition: all 0s;
+    width: 60%;
+  }
+  
+  .menu_div a{
+    height: 100%;
+    padding: 0px 2.5%;
+    color: white;
+    display: inline-block;
+    width: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_div{
+    display: none;
+    order: -1;
+  }
+
+  .logo_div{
+    order: 1;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .contact_div{
+    order: 3;
+    width: 110px;
+  }
+}
+
+
+
+
+/* ***********************HOME******************* */
+
+.home_section{
+  margin-top: 65px;
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.rachid_intro, .rachid_skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0px auto;
+  max-width: 850px;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.description{
+  width: 55%;
+  padding: 2.5px;
+  color: white;
+}
+
+.description h1{
+  font-size: 22.5px;
+  color: rgb(2, 160, 2);
+  margin: 10px 0px;
+}
+
+.description p{
+  font-size: 12.5px;
+  margin-bottom: 10px;
+}
+
+.description_buttons{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description_buttons a{
+  border: 2.5px solid rgb(2, 160, 2);
+  color: rgb(2, 160, 2);
+  padding: 5px;
+  margin: 1.5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.description_buttons a:hover{
+  background: rgb(2, 160, 2);
+  color: white;
+}
+
+.profile_pic{
+  width: 45%;
+  text-align: right;
+}
+
+.profile_pic img{
+  width: 90%;
+  margin: 0px auto;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+#current_skills{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.rachid_skills{
+  margin-top: -5px;
+  max-width: 500px;
+  padding-top: 5px;
+  padding-bottom: 80px;
+}
+
+.laptop_image{
+  width: 40%;
+  text-align: center;
+}
+
+.laptop_man{
+  width: 40%;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.skills_description{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.5px;
+  color: white;
+  text-align: center;
+}
+
+#download{
+  color: rgb(2, 160, 2);
+  border: 2.5px solid rgb(2, 160, 2);
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#download:hover{
+  background: rgb(2, 160, 2);
+  color: white;
+}
+
+.laptop_image img{
+  width: 100px;
+  transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 500px){
+  .description h1{
+      font-size: 40px;
+  }
+  
+  .description p{
+      font-size: 20px;
+  }
+
+  .profile_pic img{
+      height: 260px;
+      max-width: 250px;
+  }
+
+  .laptop_image img{
+      width: 150px;
+  }
+
+  #current_skills{
+      font-size: 32.5px;
+  }
+
+  .skills_description{
+      font-size: 20px;
+  }
+
+  .description_buttons a, #download{
+      font-size: 22.5px;
+  }
+
+}
+
+
+
+/* ********************MY STORY******************* */
+
+.about_section{
+  width: 95%;
+  margin: 45px auto;
+  max-width: 800px;
+}
+
+.about_section h1{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about_section p{
+  text-indent: 20px;
+  margin-bottom: 10px;
+  font-size: 17.5px;
+}
+
+#interest{
+  text-align: center;
+  margin: 20px auto;
+}
+
+
+/* *************My Work************** */
+
+.work_section{
+  background: rgb(32, 32, 32);
+  color: white;
+  text-align: center;
+}
+
+.work_section h1{
+  font-size: 35px;
+  padding-top: 45px;
+}
+/* ***************SLIDER******************** */
+
+.slider{
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 10px auto;
+  height: 250px;
+}
+
+.slide_container{
+  width: 90%;
+  max-width: 700px;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slide{
+  min-width: 100%;
+  text-align: center;
+  height: 100%;
+  transition: all .5s ease;
+  border-radius: 5px;
+}
+
+#goLeft{
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%) rotate(180deg);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: white;
+  background: black;
+  cursor: pointer;
+  outline: none;
+  color: rgb(2, 160, 2);
+  border: 3px solid rgb(2, 160, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#goRight{
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: white;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  outline: none;
+  color: rgb(2, 160, 2);
+  border: 3px solid rgb(2, 160, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #goRight:hover, #goLeft:hover{
+    background: rgb(2, 160, 2);
+    color: white;
+  }
+}
+
+.featured{
+  text-align: center;
+  margin-bottom: 120px;
+  padding: 0px 5px;
+}
+
+
+@media screen and (min-width: 400px){
+  .slider{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 650px){
+  .slider{
+    height: 400px;
+  }
+}
+
+/* *********************FOOTER*********************** */
+
+.footer_div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 2.5%;
+  /* max-width: 650px; */
+  margin: 0px auto;
+  background: black;
+}
+
+.footer_contact{
+  width: 50%;
+}
+
+.footer_contact h2{
+  font-size: 12.5px;
+  color: white;
+}
+
+.social_media{
+  width: 50%;
+  text-align: right;
+}
+
+.social_media a{
+  text-decoration: none;
+}
+
+.social_media img{
+  width: 40px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 330px){
+  .footer_contact h2{
+      font-size: 15px;
+  }
+  .social_media img{
+      width: 50px;
   }
 }
