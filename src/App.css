@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Signika', sans-serif;
 }
 
 /* **************NAVBAR***************** */
@@ -36,7 +38,7 @@
   width: 100px;
   height: 32.5px;
   margin-top: 2.5px;
-  margin-right: -2.5px;
+  cursor: pointer;
 }
 
 .menu_div{
@@ -69,10 +71,13 @@
   padding: 5px;
   text-decoration: none;
   font-size: 25px;
+  cursor: pointer;
 }
 
-.menu_div a:hover{
-  color: rgb(2, 160, 2);
+@media (hover: hover) and (pointer: fine) {
+  .menu_div a:hover{
+    color: rgb(2, 160, 2);
+  }
 }
 
 .hamburger_div{
@@ -101,16 +106,18 @@
   color:rgb(2, 160, 2);
   padding: 2.5px;
   border-radius: 5px;
-  font-size: 12.5px;
+  font-size: 8.5px;
   text-align: right;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
 }
 
-.contact_div button:hover{
-  background: rgb(2, 160, 2);
-  color: white;
+@media (hover: hover) and (pointer: fine) {
+  .contact_div button:hover{
+    background: rgb(2, 160, 2);
+    color: white;
+  }
 }
 
 .contact_info{
@@ -118,18 +125,19 @@
   top: 65px;
   right: -100%;
   width: 100%;
+  min-height: 400px;
   height: calc(100vh - 65px);
+  max-height: calc(100vh - 65px);
   background: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
-  transition: all .5s ease;
+  transition: right .5s ease, opacity .5s ease;
   z-index: 10;
   color: white;
   text-align: center;
   padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact_info.active{
@@ -137,9 +145,12 @@
   opacity: 1;
 }
 
-.contact_info h2{
+.contact_info div h2{
   color: white;
+  width: 100%;
+  margin: 0px auto;
   max-width: 450px;
+  text-align: center;
 }
 
 .contact_info h4{
@@ -155,18 +166,16 @@
   border-radius: 5px;
   color: white;
   background: rgb(2, 160, 2);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 450px){
+  .contact_div button{
+    font-size: 12.5px;
+  }
 }
 
 @media screen and (min-width: 800px){
-  /* .contact_div{
-    background: red;
-    width: 150px;
-  }
-  
-  .contact_div button{
-    font-size: 14px;
-    width: 170px;
-  } */
   .menu_div{
     position: static;
     order: 2;
@@ -216,9 +225,14 @@
 /* ***********************HOME******************* */
 
 .home_section{
-  margin-top: 65px;
+  margin-top: 45px;
   background: rgb(32, 32, 32);
   color: white;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .rachid_intro, .rachid_skills{
@@ -227,7 +241,7 @@
   align-items: center;
   width: 95%;
   margin: 0px auto;
-  max-width: 850px;
+  max-width: 780px;
   padding-top: 50px;
   border-radius: 10px;
 }
@@ -254,19 +268,22 @@
   flex-wrap: wrap;
 }
 
-.description_buttons a{
+.description_buttons span{
   border: 2.5px solid rgb(2, 160, 2);
   color: rgb(2, 160, 2);
   padding: 5px;
   margin: 1.5px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 21px;
+  cursor: pointer;
 }
 
-.description_buttons a:hover{
-  background: rgb(2, 160, 2);
-  color: white;
+@media (hover: hover) and (pointer: fine) {
+  .description_buttons span:hover{
+    background: rgb(2, 160, 2);
+    color: white;
+  }
 }
 
 .profile_pic{
@@ -285,8 +302,14 @@
 #current_skills{
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 15px;
+}
+
+@media screen and (min-width: 450px){
+  #current_skills{
+    margin-top: 50px;
+  }
 }
 
 .rachid_skills{
@@ -329,9 +352,11 @@
   margin-top: 10px;
 }
 
-#download:hover{
-  background: rgb(2, 160, 2);
-  color: white;
+@media (hover: hover) and (pointer: fine) {
+  #download:hover{
+    background: rgb(2, 160, 2);
+    color: white;
+  }
 }
 
 .laptop_image img{
@@ -349,8 +374,8 @@
   }
 
   .profile_pic img{
-      height: 260px;
-      max-width: 250px;
+      height: 240px;
+      max-width: 230px;
   }
 
   .laptop_image img{
@@ -377,14 +402,16 @@
 
 .about_section{
   width: 95%;
-  margin: 45px auto;
+  margin: 0px auto;
   max-width: 800px;
+  margin-bottom: 45px;
 }
 
 .about_section h1{
   font-size: 35px;
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 45px;
 }
 
 .about_section p{
@@ -405,20 +432,47 @@
   background: rgb(32, 32, 32);
   color: white;
   text-align: center;
+  padding-bottom: 45px;
 }
 
 .work_section h1{
   font-size: 35px;
   padding-top: 45px;
+  padding-bottom: 10px;
 }
+
+.project_type{
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.project_title{
+  margin: 7.5px;
+  font-size: 22.5px;
+}
+
+.projects_slider_container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 5px;
+}
+
+.projects_slider_container div{
+  margin: 0px auto;
+}
+
+
 /* ***************SLIDER******************** */
 
 .slider{
   position: relative;
   width: 80%;
-  max-width: 700px;
+  max-width: 650px;
   margin: 10px auto;
-  height: 250px;
+  height: 230px;
 }
 
 .slide_container{
@@ -442,10 +496,10 @@
 #goLeft{
   position: absolute;
   top: 50%;
-  left: -20px;
+  left: -25px;
   transform: translateY(-50%) rotate(180deg);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   color: white;
   background: black;
@@ -461,10 +515,10 @@
 #goRight{
   position: absolute;
   top: 50%;
-  right: -20px;
+  right: -25px;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   color: white;
   background: rgb(0, 0, 0);
@@ -477,8 +531,19 @@
   justify-content: center;
 }
 
+#see_more{
+  background: black;
+  color: rgb(2, 160, 2);
+  border: 3px solid rgb(2, 160, 2);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
 @media (hover: hover) and (pointer: fine) {
-  #goRight:hover, #goLeft:hover{
+  #goRight:hover, #goLeft:hover, #see_more:hover{
     background: rgb(2, 160, 2);
     color: white;
   }
@@ -501,6 +566,101 @@
   .slider{
     height: 400px;
   }
+}
+
+/* ******Project Modal************* */
+
+.project_modal{
+  display: none;
+}
+
+.project_modal.active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 6;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 20;
+  color: black;
+}
+
+.project_container{
+  position: absolute;
+  background: white;
+  padding: 30px 25px;
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  min-width: 270px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.project_container h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.project_container img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.project_container p{
+  text-align: left;
+  text-indent: 20px;
+  margin: 5px auto;
+  font-size: 17.5px;
+}
+
+.project_container .project_links{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_container a{
+  text-decoration: none;
+  margin: 5px 10px;
+  background: black;
+  color:rgb(2, 160, 2);
+  border: 3px solid rgb(2, 160, 2);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17.5px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project_container a:hover{
+    background: rgb(2, 160, 2);
+    color: white;
+  }
+}
+
+.exit_modal{
+  display: none;
+}
+
+.exit_modal.active{
+  position: fixed;
+  display: inherit;
+  top: 2.5%;
+  right: 2.5%;
+  width: 30px;
+  cursor: pointer;
+  z-index: 20;
 }
 
 /* *********************FOOTER*********************** */

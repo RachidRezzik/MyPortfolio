@@ -14,10 +14,16 @@ export default function Work() {
     return (
         <div className="work_section">
             <h1>My Work</h1>
-            <h4><i>React JS Projects (Latest Work)</i></h4>
-            <Slider projectImages={[{title:"Rise Coffee", src: RiseCoffee}, {title: "LETSTRAVEL", src: LETSTRAVEL}, {title: "Soccer Recap", src: soccerRecap}, {title: "HIIT Workout", src: HIIT}]}/>
-            <h4><i>Vanilla JavaScript Projects (First Work)</i></h4>
-            <Slider projectImages={[{title:"AbsoluteGooners", src: AbsoluteGooners}, {title: "Snake Game", src: Snake}, {title: "THEFIGHTCLUB", src: FightClub}, {title: "GodJam", src: GodJam}]}/>
+            <div className="projects_slider_container">
+                <div>
+                    <h4 className="project_type"><i>★ React JS Projects (Latest Work) ★</i></h4>
+                    <Slider projects={[{title:"Rise Coffee", src: RiseCoffee}, {title: "LETSTRAVEL", src: LETSTRAVEL}, {title: "Soccer Recap", src: soccerRecap}, {title: "HIIT Workout", src: HIIT}]}/>
+                </div>
+                <div>
+                    <h4 className="project_type"><i>Vanilla JavaScript Projects (My First Dev Work)</i></h4>
+                    <Slider projects={[{title:"AbsoluteGooners", src: AbsoluteGooners}, {title: "Snake Game", src: Snake}, {title: "THEFIGHTCLUB", src: FightClub}, {title: "GodJam", src: GodJam}]}/>
+                </div>
+            </div>
         </div>
     )
 }

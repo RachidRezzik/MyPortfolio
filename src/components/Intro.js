@@ -5,7 +5,11 @@ import laptop from '../images/laptop.png'
 //DATA
 import resume from '../data/Rachid_Rezzik.pdf'
 
-export default function Intro() {
+export default function Intro(props) {
+    const handleLinkClick = (element_id) => {
+        props.handleScroll(element_id)
+    }
+
     return (
         <div className="home_section">
             <div className="rachid_intro">
@@ -13,7 +17,8 @@ export default function Intro() {
                     <h1>Rachid Rezzik</h1>
                     <p>I'm a Jr. Frontend Developer Who's Open to New Opportunities Across Texas.</p>
                     <div className="description_buttons">
-                        <a href="/html/work.html">My Work</a>
+                        <span onClick={() => handleLinkClick("#About")}>My Story</span>
+                        <span onClick={() => handleLinkClick("#Work")}>My Work</span>
                     </div>
     
                 </div>

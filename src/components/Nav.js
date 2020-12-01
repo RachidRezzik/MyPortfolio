@@ -7,7 +7,7 @@ import x_mark from '../images/x_mark.png'
 import rachid_logo from '../images/rachid_logo.jpg'
 
 
-export default function Nav() {
+export default function Nav(props) {
     const [menuOpen, setMenuOpen] = useState(false)
     const [contactOpen, setContactOpen] = useState(false)
     const [isMobile, setIsMobile] = useState(useWindowSize() <= 650 ? true : false)
@@ -38,18 +38,25 @@ export default function Nav() {
         setMenuOpen(false)
     }
 
+
+    const handleLinkClick = (element_id) => {
+        props.handleScroll(element_id)
+        setMenuOpen(false)
+        setContactOpen(false)
+    }
+
     return (
         <div>
             <div className="navbar">
                 <div className="logo_div">
-                    <a href="#Home">
+                    <a onClick={() => handleLinkClick("#Home")}>
                         <img src={rachid_logo} alt="" />
                     </a>
                 </div>
                 <div className={menuOpen? "menu_div active" : "menu_div"}>
-                    <a href="#Home">HOME</a>
-                    <a href="#About">ABOUT</a>
-                    <a href="#Work">MY WORK</a>
+                    <a onClick={() => handleLinkClick("#Home")}>INTRO</a>
+                    <a onClick={() => handleLinkClick("#About")}>ABOUT</a>
+                    <a onClick={() => handleLinkClick("#Work")}>MY WORK</a>
                 </div>
                 <div className="hamburger_div">
                     <img src={menuOpen ? x_mark : hamburger} alt="" onClick={handleMenuOpen}/>
@@ -59,6 +66,7 @@ export default function Nav() {
                 </div>
             </div>
             <div className={contactOpen ? "contact_info active" : "contact_info"}>
+                <div>
                     <h2>Please Feel Free to Contact Me Through Any of the Following Channels</h2>
                     <h4 style={{marginTop: "30px"}}>Email:</h4>
                     <h4>Rachid.Rezzik@hotmail.com</h4>
@@ -66,6 +74,7 @@ export default function Nav() {
                     <h4>832-368-0908</h4>
                     <h4 style={{marginTop: "30px", marginBottom:"10px"}}>Linkedin:</h4>
                     <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/" >My Profile</a>   
+                </div>
             </div>
         </div>
     )

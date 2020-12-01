@@ -1,7 +1,15 @@
 import React, {useState} from 'react'
+//Component
+import ProjectModal from '../components/ProjectModal'
 
 export default function Slider(props) {
-    const sliderArray = props.projectImages
+    const [modalOpen, setModalOpen] = useState(false)
+
+    const handleModal = () => {
+        setModalOpen(!modalOpen)
+    }
+
+    const sliderArray = props.projects
     const [slideIndex, setSlideIndex] = useState(0)
     const slideTitle = sliderArray[slideIndex].title
 
@@ -34,8 +42,7 @@ export default function Slider(props) {
 
     return (
         <div>
-            <h2>{slideTitle}</h2>
-            <h4>Project {slideIndex + 1}/{sliderArray.length}</h4>
+            <h4 className="project_title">{slideTitle} (Project {slideIndex + 1}/{sliderArray.length})</h4>
             <div className="slider">
                 <div className="slide_container">
                     {
@@ -51,7 +58,14 @@ export default function Slider(props) {
                 <button id="goLeft" onClick={goLeft}>➤</button>
                 <button id="goRight" onClick={goRight}>➤</button>
             </div>
-            <button>Learn More</button>
+            <button id="see_more" onClick={handleModal}>See Description/Site/Code</button>
+            {/* Modal Project Description */}
+            <ProjectModal 
+            projects={props.projects}
+            slideIndex={slideIndex}
+            modalOpen={modalOpen}
+            handleModal={handleModal}
+            />
         </div>
     )
 }
