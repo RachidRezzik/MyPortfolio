@@ -55,7 +55,7 @@ export default function ProjectModal(props) {
                 Utilizing React Router, I developed a 2000 - 2020 Soccer Dashboard to recap major soccer events/statistics over the past twenty years. This project is a Single Page Application (SPA).
             </p>
             <div className="project_links">
-                <a id="project_result" href="https://rachidrezzik.github.io/Soccer_Recap/" target="_blank">View Soccer Recap</a>    
+                <a id="project_result" href="https://rachidrezzik.github.io/SoccerRecap/" target="_blank">View Soccer Recap</a>    
                 <a id="project_code" href="https://github.com/RachidRezzik/Soccer_Recap" target="_blank">View Project Code</a>    
             </div>
         </div>
