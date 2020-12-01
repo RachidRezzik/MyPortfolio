@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.4c87aa37.chunk.css",
+    "main.js": "/MyPortfolio/static/js/main.90c0716a.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.90c0716a.chunk.js.map",
+    "runtime-main.js": "/MyPortfolio/static/js/runtime-main.206497cb.js",
+    "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.206497cb.js.map",
+    "static/js/2.aed5b966.chunk.js": "/MyPortfolio/static/js/2.aed5b966.chunk.js",
+    "static/js/2.aed5b966.chunk.js.map": "/MyPortfolio/static/js/2.aed5b966.chunk.js.map",
+    "static/js/3.e511dfbf.chunk.js": "/MyPortfolio/static/js/3.e511dfbf.chunk.js",
+    "static/js/3.e511dfbf.chunk.js.map": "/MyPortfolio/static/js/3.e511dfbf.chunk.js.map",
+    "index.html": "/MyPortfolio/index.html",
+    "static/css/main.4c87aa37.chunk.css.map": "/MyPortfolio/static/css/main.4c87aa37.chunk.css.map",
+    "static/js/2.aed5b966.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.aed5b966.chunk.js.LICENSE.txt",
+    "static/media/LETSTRAVEL.32c784a7.JPG": "/MyPortfolio/static/media/LETSTRAVEL.32c784a7.JPG",
+    "static/media/Rachid_Rezzik.8f4c8f6d.pdf": "/MyPortfolio/static/media/Rachid_Rezzik.8f4c8f6d.pdf",
+    "static/media/Rise_Coffee.0d69532a.JPG": "/MyPortfolio/static/media/Rise_Coffee.0d69532a.JPG",
+    "static/media/Soccer_Recap.e89b27fd.JPG": "/MyPortfolio/static/media/Soccer_Recap.e89b27fd.JPG",
+    "static/media/absolute_gooners.4ec2d0a2.JPG": "/MyPortfolio/static/media/absolute_gooners.4ec2d0a2.JPG",
+    "static/media/fight_club.a63289ca.JPG": "/MyPortfolio/static/media/fight_club.a63289ca.JPG",
+    "static/media/github.c808067e.png": "/MyPortfolio/static/media/github.c808067e.png",
+    "static/media/god_jam.c68a374b.JPG": "/MyPortfolio/static/media/god_jam.c68a374b.JPG",
+    "static/media/laptop.c87422a0.png": "/MyPortfolio/static/media/laptop.c87422a0.png",
+    "static/media/profile_pic.d534083a.jpg": "/MyPortfolio/static/media/profile_pic.d534083a.jpg",
+    "static/media/rachid_logo.317ee617.jpg": "/MyPortfolio/static/media/rachid_logo.317ee617.jpg",
+    "static/media/snake.f24bf223.JPG": "/MyPortfolio/static/media/snake.f24bf223.JPG",
+    "static/media/workout.4b298a2b.JPG": "/MyPortfolio/static/media/workout.4b298a2b.JPG",
+    "static/media/x_mark.24f16f08.png": "/MyPortfolio/static/media/x_mark.24f16f08.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.206497cb.js",
+    "static/js/2.aed5b966.chunk.js",
+    "static/css/main.4c87aa37.chunk.css",
+    "static/js/main.90c0716a.chunk.js"
+  ]
+}
