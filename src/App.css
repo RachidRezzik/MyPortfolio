@@ -444,13 +444,13 @@
 .project_type{
   margin-top: 50px;
   font-size: 25px;
-  line-height: 25px;
+  line-height: 27.5px;
 }
 
 .project_title{
   margin: 17.5px;
   font-size: 22.5px;
-  line-height: 20px;
+  line-height: 22.5px;
 }
 
 .projects_slider_container{
@@ -597,7 +597,7 @@
 .project_container{
   position: absolute;
   background: white;
-  padding: 30px 25px;
+  padding: 15px 25px;
   width: 95%;
   margin: 0px auto;
   margin-bottom: 20px;
@@ -609,7 +609,7 @@
 
 .project_container h3{
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 7.5px;
 }
 
 .project_container img{
@@ -623,7 +623,13 @@
   text-align: left;
   text-indent: 20px;
   margin: 5px auto;
-  font-size: 17.5px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 450px){
+  .project_container p{
+    font-size: 17.5px;
+  }
 }
 
 .project_container .project_links{

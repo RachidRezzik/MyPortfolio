@@ -101,10 +101,7 @@ export default function ProjectModal(props) {
     } else if (project.title == "THEFIGHTCLUB") {
         project_description_links = <div>
             <p>
-                In my second project, I built a social media site for boxing athletes, coaches, and gym owners. Connections between the profile types, such as an athlete's teammates and coach, provide interesting/useful information for those involved in boxing professionally.  
-            </p>
-            <p>
-                The user will first create one of the three profile types (athlete/coach/gym). Based on the profile type, the user will be asked for more information that can strengthen their profile and form connections to other users. 
+                I built a social media site for boxing athletes, coaches, and gym owners. The user will first create one of the three profile types (athlete/coach/gym). Based on the profile type, the user will be asked for more information that can strengthen their profile and form connections to other users. 
             </p>
             <p>
                 Once the user has created a profile, they can edit their profile picture, edit their profile information, add a picture post, search for a specific athlete/coach/gym, and browse the all the available profiles on the site.
