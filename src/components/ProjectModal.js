@@ -56,7 +56,7 @@ export default function ProjectModal(props) {
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://rachidrezzik.github.io/SoccerRecap/" target="_blank">View Soccer Recap</a>    
-                <a id="project_code" href="https://github.com/RachidRezzik/Soccer_Recap" target="_blank">View Project Code</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/SoccerRecap" target="_blank">View Project Code</a>    
             </div>
         </div>
     } else if (project.title == "HIIT Workout") {
@@ -82,7 +82,7 @@ export default function ProjectModal(props) {
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://distracted-payne-9fcddb.netlify.app/html/arsenal_fansite/index.html" target="_blank">Go to AbsoluteGooners</a>    
-                <a id="project_code" href="https://github.com/RachidRezzik/Web_Dev_Portfolio" target="_blank">View Project Code</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/FirstJS_Projects/tree/main/AbsoluteGooners" target="_blank">View Project Code</a>    
             </div>
         </div>
     } else if (project.title == "Snake Game") {
@@ -95,7 +95,7 @@ export default function ProjectModal(props) {
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://distracted-payne-9fcddb.netlify.app/html/snake/index.html" target="_blank">Play Snake!</a>    
-                <a id="project_code" href="https://github.com/RachidRezzik/Web_Dev_Portfolio" target="_blank">View Project Code</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/FirstJS_Projects/tree/main/Snake" target="_blank">View Project Code</a>    
             </div>
         </div>
     } else if (project.title == "THEFIGHTCLUB") {
@@ -111,7 +111,7 @@ export default function ProjectModal(props) {
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://distracted-payne-9fcddb.netlify.app/html/fight_club/landing.html" target="_blank">Go to THEFIGHTCLUB</a>    
-                <a id="project_code" href="https://github.com/RachidRezzik/Web_Dev_Portfolio" target="_blank">View Project Code</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/FirstJS_Projects/tree/main/THEFIGHTCLUB" target="_blank">View Project Code</a>    
             </div>
         </div>
     } else{
@@ -124,7 +124,7 @@ export default function ProjectModal(props) {
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://distracted-payne-9fcddb.netlify.app/html/god_jam/landing.html" target="_blank">Go to God Jam!!!</a>    
-                <a id="project_code" href="https://github.com/RachidRezzik/Web_Dev_Portfolio" target="_blank">View Project Code</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/FirstJS_Projects/tree/main/GodJam" target="_blank">View Project Code</a>    
             </div>
         </div>
     }
