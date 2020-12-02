@@ -444,11 +444,13 @@
 .project_type{
   margin-top: 50px;
   font-size: 25px;
+  line-height: 20px;
 }
 
 .project_title{
-  margin: 7.5px;
+  margin: 17.5px;
   font-size: 22.5px;
+  line-height: 15px;
 }
 
 .projects_slider_container{
@@ -482,8 +484,6 @@
   height: 100%;
   margin: 0px auto;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   overflow: hidden;
   border-radius: 5px;
 }

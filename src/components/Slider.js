@@ -41,7 +41,7 @@ export default function Slider(props) {
     }
 
     return (
-        <div>
+        <div className={props.type == "vanilla" ? "vanilla_slider" : ""}>
             <h4 className="project_title">{slideTitle} (Project {slideIndex + 1}/{sliderArray.length})</h4>
             <div className="slider">
                 <div className="slide_container">
