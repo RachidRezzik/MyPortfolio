@@ -13,10 +13,10 @@ export default function Footer() {
                 <h2>832-368-0908</h2>
             </div>
             <div className="social_media">
-                <a href="https://github.com/RachidRezzik">
+                <a href="https://github.com/RachidRezzik" target="_blank">
                     <img className="github" src={github} alt="" />
                 </a>
-                <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/">
+                <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/" target="_blank">
                     <img className="linkedin" src={linkedin} alt="" />
                 </a>
             </div>

@@ -73,7 +73,7 @@ export default function Nav(props) {
                     <h4 style={{marginTop: "30px"}}>Phone:</h4>
                     <h4>832-368-0908</h4>
                     <h4 style={{marginTop: "30px", marginBottom:"10px"}}>Linkedin:</h4>
-                    <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/" >My Profile</a>   
+                    <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/"  target="_blank">My Profile</a>   
                 </div>
             </div>
         </div>
