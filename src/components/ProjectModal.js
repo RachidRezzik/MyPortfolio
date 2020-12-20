@@ -29,7 +29,18 @@ export default function ProjectModal(props) {
     //Filling in Modal Project info based on which slide user is on
 
     let project_description_links
-    if (project.title == "Rise Coffee"){
+
+    if (project.title == "ECLIPSE"){
+        project_description_links = <div>
+            <p>
+                Fitness clothing company's website that offers products for men and women. User can search for products, find related products to the one they're already previewing, add products to their bag, edit their bag, and apply coupon codes to their total. 
+            </p>
+            <div className="project_links">
+                <a id="project_result" href="https://rachidrezzik.github.io/ECLIPSE" target="_blank">Shop ECLIPSE</a>    
+                <a id="project_code" href="https://github.com/RachidRezzik/ECLIPSE" target="_blank">View Project Code</a>    
+            </div>
+        </div>
+    } else if (project.title == "Rise Coffee"){
         project_description_links = <div>
             <p>
                 Website for a fictitious coffee business in which users can learn about the Company’s origin, shop for coffee, or find locations. Users can add/remove/edit their order in their bag. Gained experience in utilizing React Hook Form and local storage for user order data.  

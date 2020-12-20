@@ -15,7 +15,7 @@ export default function Intro(props) {
             <div className="rachid_intro">
                 <div className="description">
                     <h1>Rachid Rezzik</h1>
-                    <p>I'm a Jr. Frontend Developer Who's Open to New Opportunities Across Texas.</p>
+                    <p>I'm a Self-Taught Frontend Developer Who's Open to New Opportunities Across Texas.</p>
                     <div className="description_buttons">
                         <span onClick={() => handleLinkClick("#About")}>My Story</span>
                         <span onClick={() => handleLinkClick("#Work")}>My Work</span>
