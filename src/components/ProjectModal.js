@@ -33,7 +33,7 @@ export default function ProjectModal(props) {
     if (project.title == "ECLIPSE"){
         project_description_links = <div>
             <p>
-                Fitness clothing company's website that offers products for men and women. User can search for products, find related products to the one they're already previewing, add products to their bag, edit their bag, and apply coupon codes to their total. 
+                Fitness company's website that offering activewear for men and women. User can search for products, find related products to the one they're already previewing, add products to their bag, edit their bag, and apply coupon codes to their total. 
             </p>
             <div className="project_links">
                 <a id="project_result" href="https://rachidrezzik.github.io/ECLIPSE" target="_blank">Shop ECLIPSE</a>    
