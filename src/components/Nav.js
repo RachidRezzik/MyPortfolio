@@ -56,7 +56,7 @@ export default function Nav(props) {
                 <div className={menuOpen? "menu_div active" : "menu_div"}>
                     <a onClick={() => handleLinkClick("#Home")}>INTRO</a>
                     <a onClick={() => handleLinkClick("#About")}>ABOUT</a>
-                    <a onClick={() => handleLinkClick("#Work")}>MY WORK</a>
+                    <a onClick={() => handleLinkClick("#Work")}>PROJECTS</a>
                 </div>
                 <div className="hamburger_div">
                     <img src={menuOpen ? x_mark : hamburger} alt="" onClick={handleMenuOpen}/>

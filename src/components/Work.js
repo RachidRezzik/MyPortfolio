@@ -1,20 +1,43 @@
-import React from 'react'
-import Slider from './Slider'
-//Project Images
-import ECLIPSE from '../images/ECLIPSE.JPG'
-import soccerRecap from '../images/Soccer_Recap.JPG'
-import RiseCoffee from '../images/Rise_Coffee.JPG'
-import LETSTRAVEL from '../images/LETSTRAVEL.JPG'
-import HIIT from '../images/workout.JPG'
+import React, { useState } from 'react'
+
+//Components
+import RR_Finance from './RR_Finance'
+import RiseCoffee from './RiseCoffee'
+import LETSTRAVEL from './LETSTRAVEL'
+import ECLIPSE from './ECLIPSE'
+import HIIT from './HIIT'
 
 export default function Work() {
-    return (
+    const [project, setProject] = useState("RR_Finance")
+
+    const handleProject = (project_title) => {
+        setProject(project_title)
+    }
+    
+    
+
+    return (        
         <div className="work_section">
-            <h1>My Work</h1>
-            <div className="projects_slider_container">
-                <div>
-                    <Slider projects={[{title:"ECLIPSE", src: ECLIPSE}, {title:"Rise Coffee", src: RiseCoffee}, {title: "LETSTRAVEL", src: LETSTRAVEL}, {title: "Soccer Recap", src: soccerRecap}, {title: "HIIT Workout", src: HIIT}]}/>
+            <h1>Projects</h1>
+            <div className="projects_container">
+                <div className="projects_nav">
+                    <button id="RR_Finance" className={project === "RR_Finance" ? "active" : ""} onClick={() => handleProject("RR_Finance")}>RR Finance</button>
+                    <button id="ECLIPSE" className={project === "ECLIPSE" ? "active" : ""} onClick={() => handleProject("ECLIPSE")}>ECLIPSE</button>
+                    <button id="RiseCoffee" className={project === "RiseCoffee" ? "active" : ""} onClick={() => handleProject("RiseCoffee")}>Rise Coffee</button>
+                    <button id="LETSTRAVEL" className={project === "LETSTRAVEL" ? "active" : ""} onClick={() => handleProject("LETSTRAVEL")}>LETSTRAVEL</button>
+                    <button id="HIIT" className={project === "HIIT" ? "active" : ""} onClick={() => handleProject("HIIT")}>HIIT</button>
                 </div>
+                {project === "RR_Finance" ? 
+                <RR_Finance /> 
+                : project === "ECLIPSE" ?
+                <ECLIPSE />
+                : project === "LETSTRAVEL" ?
+                <LETSTRAVEL />
+                : project === "RiseCoffee" ?
+                <RiseCoffee />
+                : 
+                <HIIT />
+                }    
             </div>
         </div>
     )

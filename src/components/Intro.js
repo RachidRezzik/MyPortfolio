@@ -13,26 +13,14 @@ export default function Intro(props) {
     return (
         <div className="home_section">
             <div className="rachid_intro">
-                <div className="description">
-                    <h1>Rachid Rezzik</h1>
-                    <p>I'm a Self-Taught Frontend Developer Who's Open to New Opportunities Across Texas.</p>
-                    <div className="description_buttons">
-                        <span onClick={() => handleLinkClick("#About")}>My Story</span>
-                        <span onClick={() => handleLinkClick("#Work")}>My Work</span>
-                    </div>
-    
+                <h1>Rachid Rezzik</h1>
+                <p>I'm a self-taught junior frontend developer who loves creating useful websites and apps. My current skillset mainly includes React JS, CSS, and HTML. Start scrolling to learn more about me. </p>
+                <div className="intro_links">
+                    <a onClick={() => handleLinkClick("#work")}>Projects</a>
+                    <a href="https://github.com/RachidRezzik">Github</a>
+                    <a href="https://github.com/RachidRezzik">Linkedin</a>
                 </div>
-                <div className="profile_pic">
-                    <img src={rachid} alt="" />
-                </div>
-            </div>
-            <h2 id="current_skills">Current Skills</h2>
-            <div className="rachid_skills">
-                    <img className="laptop_man" src={laptop} alt="" />
-                <div className="skills_description">
-                    <p>HTML | CSS | BOOTSTRAP | JAVASCRIPT | REACT JS</p>
-                    <a id="download" href={resume} download>Download Resume</a>
-                </div>
+
             </div>
         </div>
     )

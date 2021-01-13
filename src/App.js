@@ -10,7 +10,7 @@ function App() {
     const handleScroll = (element) => {
       let element_height = document.querySelector(element).getBoundingClientRect().top
       window.scrollTo({
-          top: (element_height - 65 + window.scrollY + 2.5)
+          top: (element_height - 90 + window.scrollY)
       })
   }
 
