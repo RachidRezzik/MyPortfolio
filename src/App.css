@@ -35,8 +35,8 @@
 }
 
 .logo_div img{
-  width: 100px;
-  height: 60px;
+  width: 85px;
+  height: 57.5px;
   margin-top: 2.5px;
   cursor: pointer;
 }
@@ -88,8 +88,8 @@
 
 .hamburger_div img{
   order: 1;
-  width: 30px;
-  height: 30px;
+  width: 27.5px;
+  height: 27.5px;
   cursor: pointer;
 }
 
@@ -338,7 +338,7 @@
 }
 
 .projects_nav button{
-  margin: 2.5px 7.5px;
+  margin: 5px;
   padding: 5px;
   background: black;
   color: rgb(6, 147, 212);
@@ -393,7 +393,7 @@
 .project_div .project_description{
   margin-top: 15px;
   width: 100%;
-  padding: 15px;
+  padding: 5px;
 }
 
 
