@@ -11,7 +11,7 @@ export default function ECLIPSE() {
             </div>
             <div className="project_description">
                 <h3>ECLIPSE</h3>
-                <p>Fitness company offering activewear for men and women. User can search for products, find related products to the one they’re already previewing, add products to their bag, edit their bag, and apply coupon codes to their total.</p>
+                <p>Online store offering "ECLIPSE" activewear for men and women. User can search for products, find related products to the one they’re already previewing, add products to their bag, edit their bag, and apply coupon codes to their total.</p>
                 <div className="project_buttons">
                     <a href="https://rachidrezzik.github.io/ECLIPSE/" target="_blank">Visit ECLIPSE</a>
                     <a>ECLIPSE Code</a>

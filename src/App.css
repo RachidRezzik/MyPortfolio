@@ -35,8 +35,8 @@
 }
 
 .logo_div img{
-  width: 85px;
-  height: 57.5px;
+  width: 77.5px;
+  height: 55px;
   margin-top: 2.5px;
   cursor: pointer;
 }
@@ -88,8 +88,8 @@
 
 .hamburger_div img{
   order: 1;
-  width: 27.5px;
-  height: 27.5px;
+  width: 22.5px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -251,13 +251,27 @@
 }
 
 .rachid_intro h1{
-  font-size: 45px;
+  font-size: 37.5px;
+  text-align: center;
 }
 
 .rachid_intro p{
-  font-size: 15px;
+  font-size: 12.5px;
   margin: 15px auto;
   margin-bottom: 25px;
+  max-width: 400px;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 330px) {
+  .rachid_intro h1{
+    font-size: 45px;
+  }
+
+  .rachid_intro p{
+    font-size: 15px;
+  }
 }
 
 .intro_links a{
@@ -278,7 +292,7 @@
 /* ********************MY STORY******************* */
 
 .about_section{
-  width: 95%;
+  width: 90%;
   margin: 0px auto;
   max-width: 800px;
   margin-bottom: 45px;
@@ -295,6 +309,7 @@
   text-indent: 20px;
   margin-bottom: 10px;
   font-size: 17.5px;
+  text-align: justify;
 }
 
 #interest{
@@ -388,6 +403,7 @@
   width: 100%; 
   height: 100%; 
   object-position: top;
+  background: lightgrey;
 }
 
 .project_div .project_description{
@@ -398,9 +414,11 @@
 
 
 .project_description p{
-  text-align: left;
+  text-align: justify;
+  margin: 0px auto;
   text-indent: 20px;
   margin-top: 10px;
+  max-width: 600px;
 }
 
 .project_description .project_buttons{

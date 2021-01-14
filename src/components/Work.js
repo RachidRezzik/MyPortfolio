@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 //Components
-import RR_Finance from './RR_Finance'
+import RRfinance from './RR_Finance'
 import RiseCoffee from './RiseCoffee'
 import LETSTRAVEL from './LETSTRAVEL'
 import ECLIPSE from './ECLIPSE'
@@ -14,8 +14,6 @@ export default function Work() {
         setProject(project_title)
     }
     
-    
-
     return (        
         <div className="work_section">
             <h1>Projects</h1>
@@ -28,7 +26,7 @@ export default function Work() {
                     <button id="HIIT" className={project === "HIIT" ? "active" : ""} onClick={() => handleProject("HIIT")}>HIIT</button>
                 </div>
                 {project === "RR_Finance" ? 
-                <RR_Finance /> 
+                <RRfinance /> 
                 : project === "ECLIPSE" ?
                 <ECLIPSE />
                 : project === "LETSTRAVEL" ?
