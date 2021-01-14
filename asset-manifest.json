@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.0df2227e.chunk.css",
+    "main.css": "/MyPortfolio/static/css/main.79bc91e2.chunk.css",
     "main.js": "/MyPortfolio/static/js/main.b4dbd36d.chunk.js",
     "main.js.map": "/MyPortfolio/static/js/main.b4dbd36d.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.206497cb.js",
@@ -10,7 +10,7 @@
     "static/js/3.e511dfbf.chunk.js": "/MyPortfolio/static/js/3.e511dfbf.chunk.js",
     "static/js/3.e511dfbf.chunk.js.map": "/MyPortfolio/static/js/3.e511dfbf.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "static/css/main.0df2227e.chunk.css.map": "/MyPortfolio/static/css/main.0df2227e.chunk.css.map",
+    "static/css/main.79bc91e2.chunk.css.map": "/MyPortfolio/static/css/main.79bc91e2.chunk.css.map",
     "static/js/2.aed5b966.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.aed5b966.chunk.js.LICENSE.txt",
     "static/media/ECLIPSE.720c2320.JPG": "/MyPortfolio/static/media/ECLIPSE.720c2320.JPG",
     "static/media/LETSTRAVEL.32c784a7.JPG": "/MyPortfolio/static/media/LETSTRAVEL.32c784a7.JPG",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.206497cb.js",
     "static/js/2.aed5b966.chunk.js",
-    "static/css/main.0df2227e.chunk.css",
+    "static/css/main.79bc91e2.chunk.css",
     "static/js/main.b4dbd36d.chunk.js"
   ]
 }
