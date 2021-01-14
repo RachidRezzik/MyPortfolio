@@ -183,34 +183,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
     height: 100%;
     transition: all 0s;
-    width: 60%;
+    width: 45%;
+    max-width: 500px;
   }
   
-  .menu_div a{
-    height: 100%;
-    padding: 0px 2.5%;
-    color: white;
-    display: inline-block;
-    width: unset;
-    display: flex;
-    align-items: center;
-  }
-
   .hamburger_div{
     display: none;
     order: -1;
+    
   }
 
   .logo_div{
     order: 1;
     margin-right: 0px;
     margin-left: 0px;
+    width: 110px;
   }
 
   .contact_div{
