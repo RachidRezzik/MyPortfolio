@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.bf7e5196.chunk.css",
-    "main.js": "/MyPortfolio/static/js/main.17552efc.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.17552efc.chunk.js.map",
+    "main.css": "/MyPortfolio/static/css/main.0df2227e.chunk.css",
+    "main.js": "/MyPortfolio/static/js/main.b4dbd36d.chunk.js",
+    "main.js.map": "/MyPortfolio/static/js/main.b4dbd36d.chunk.js.map",
     "runtime-main.js": "/MyPortfolio/static/js/runtime-main.206497cb.js",
     "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.206497cb.js.map",
     "static/js/2.aed5b966.chunk.js": "/MyPortfolio/static/js/2.aed5b966.chunk.js",
@@ -10,17 +10,14 @@
     "static/js/3.e511dfbf.chunk.js": "/MyPortfolio/static/js/3.e511dfbf.chunk.js",
     "static/js/3.e511dfbf.chunk.js.map": "/MyPortfolio/static/js/3.e511dfbf.chunk.js.map",
     "index.html": "/MyPortfolio/index.html",
-    "static/css/main.bf7e5196.chunk.css.map": "/MyPortfolio/static/css/main.bf7e5196.chunk.css.map",
+    "static/css/main.0df2227e.chunk.css.map": "/MyPortfolio/static/css/main.0df2227e.chunk.css.map",
     "static/js/2.aed5b966.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.aed5b966.chunk.js.LICENSE.txt",
     "static/media/ECLIPSE.720c2320.JPG": "/MyPortfolio/static/media/ECLIPSE.720c2320.JPG",
     "static/media/LETSTRAVEL.32c784a7.JPG": "/MyPortfolio/static/media/LETSTRAVEL.32c784a7.JPG",
     "static/media/RR_Finance.73662f0a.JPG": "/MyPortfolio/static/media/RR_Finance.73662f0a.JPG",
-    "static/media/Rachid_Rezzik.f67a2401.pdf": "/MyPortfolio/static/media/Rachid_Rezzik.f67a2401.pdf",
     "static/media/Rise_Coffee.0d69532a.JPG": "/MyPortfolio/static/media/Rise_Coffee.0d69532a.JPG",
     "static/media/github.c808067e.png": "/MyPortfolio/static/media/github.c808067e.png",
     "static/media/App.css": "/MyPortfolio/static/media/intro_background.54c1a826.JPG",
-    "static/media/laptop.c87422a0.png": "/MyPortfolio/static/media/laptop.c87422a0.png",
-    "static/media/profile_pic.d534083a.jpg": "/MyPortfolio/static/media/profile_pic.d534083a.jpg",
     "static/media/rachid_logo.f040973b.jpg": "/MyPortfolio/static/media/rachid_logo.f040973b.jpg",
     "static/media/workout.4b298a2b.JPG": "/MyPortfolio/static/media/workout.4b298a2b.JPG",
     "static/media/x_mark.24f16f08.png": "/MyPortfolio/static/media/x_mark.24f16f08.png"
@@ -28,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.206497cb.js",
     "static/js/2.aed5b966.chunk.js",
-    "static/css/main.bf7e5196.chunk.css",
-    "static/js/main.17552efc.chunk.js"
+    "static/css/main.0df2227e.chunk.css",
+    "static/js/main.b4dbd36d.chunk.js"
   ]
 }
