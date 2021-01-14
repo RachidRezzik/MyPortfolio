@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 //Component
 import useWindowSize from './useWindowSize'
 //Images
@@ -24,10 +24,6 @@ export default function Nav(props) {
 
     handleResize(useWindowSize(), isMobile)
 
-
-
-
-
     const handleMenuOpen = () => {
         setMenuOpen(!menuOpen)
         setContactOpen(false)
@@ -38,12 +34,26 @@ export default function Nav(props) {
         setMenuOpen(false)
     }
 
-
     const handleLinkClick = (element_id) => {
         props.handleScroll(element_id)
         setMenuOpen(false)
         setContactOpen(false)
     }
+
+    useEffect(() => {
+        let handler = (event) => {
+            if (!node.current.contains(event.target) && event.target.id !== "contact_button" && contactOpen) {
+                handleContactOpen()
+            }
+        }
+        document.addEventListener('mousedown', handler)
+
+        return () => {
+            document.removeEventListener('mousedown', handler)
+        }
+    },)
+
+    const node = React.useRef()
 
     return (
         <div>
@@ -62,18 +72,14 @@ export default function Nav(props) {
                     <img src={menuOpen ? x_mark : hamburger} alt="" onClick={handleMenuOpen}/>
                 </div>
                 <div className="contact_div">
-                    <button onClick={handleContactOpen}>{contactOpen? "Close Info" : "Contact Info"}</button>
+                    <button id="contact_button" onClick={handleContactOpen}>{contactOpen? "Close Info" : "Contact Info"}</button>
                 </div>
             </div>
-            <div className={contactOpen ? "contact_info active" : "contact_info"}>
+            <div ref={node} className={contactOpen ? "contact_info active" : "contact_info"}>
                 <div>
-                    <h2>Please Feel Free to Contact Me Through Any of the Following Channels</h2>
-                    <h4 style={{marginTop: "30px"}}>Email:</h4>
-                    <h4>Rachid.Rezzik@hotmail.com</h4>
-                    <h4 style={{marginTop: "30px"}}>Phone:</h4>
-                    <h4>832-368-0908</h4>
-                    <h4 style={{marginTop: "30px", marginBottom:"10px"}}>Linkedin:</h4>
-                    <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/"  target="_blank">My Profile</a>   
+                    <h4>Email: Rachid.Rezzik@hotmail.com</h4>
+                    <h4 style={{marginBottom: "20px"}}>Phone: 832-368-0908</h4>
+                    <a id="linkedin" href="https://www.linkedin.com/in/rachid-rezzik-62629858/"  target="_blank">Linkedin Profile</a>   
                 </div>
             </div>
         </div>
